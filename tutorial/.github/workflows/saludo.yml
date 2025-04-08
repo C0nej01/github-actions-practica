@@ -1,0 +1,13 @@
+name: Saludo
+
+on:
+  push: # evento
+    branches: ['main'] # Ejecucion en rama main
+
+jobs:
+  saludar:
+    runs-on: ubuntu-latest # SO
+
+    steps: # para el job : saludar
+      - name: Imprimir saludo
+        run: echo "Hola a todos. ¡Un conejo desde atrás les saluda!"
